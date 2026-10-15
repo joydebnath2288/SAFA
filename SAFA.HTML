@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Bestie 🎀💕</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", sans-serif;
+    background: linear-gradient(135deg, #ffe4ef, #fff0f6, #ffd6e7);
+    color: #a83262;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 45px 15px 25px;
+    background: rgba(255,255,255,0.45);
+    border-bottom: 3px dashed #ff9fbd;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    color: #f06292;
+    text-shadow: 3px 3px white;
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.bow {
+    font-size: 3rem;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 25px auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.8);
+    border: 2px solid #ffb6cd;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(219, 91, 139, 0.13);
+}
+
+.kitty {
+    font-size: 5rem;
+    animation: bounce 2s infinite;
+}
+
+h2 {
+    color: #e75480;
+}
+
+p {
+    line-height: 1.8;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 13px 20px;
+    margin: 7px;
+    background: #ff8fb1;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #e96d95;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #f06292;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.message {
+    background: #fff0f6;
+    border: 2px dashed #ff9fbd;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    min-height: 90px;
+    margin-top: 20px;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.reason {
+    background: #ffe4ef;
+    padding: 18px 10px;
+    border-radius: 18px;
+}
+
+footer {
+    padding: 30px 15px;
+    background: rgba(255,255,255,0.5);
+    border-top: 3px dashed #ff9fbd;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    pointer-events: none;
+    animation: floatUp 5s linear forwards;
+    z-index: 5;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(30deg);
+        opacity: 0;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 18px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="bow">🎀 🌸 🎀</div>
+    <h1>Hiii SUYAR! 💗</h1>
+    <p class="subtitle">
+        A tiny pink website for my favorite human ever! 🐱💕<br>
+        Made with love, sparkles and a little bit of craziness ✨
+    </p>
+</header>
+
+<main class="container">
+
+    <section class="card">
+        <div class="kitty">🎀🐱🎀</div>
+        <h2>You Are My BESTEST Friend Ever! 💖</h2>
+        <p>
+            Hellooo, SAFA!<br>
+            If nobody has reminded you today, let ME tell you...
+            YOU ARE SO SPECIAL!
+        </p>
+        <p>
+            You're not just my best friend. You're my comfort person,
+            my partner in crime, my personal therapist, my gossip buddy
+            and my little piece of happiness. 🌷
+        </p>
+        <button onclick="showMessage()">
+            Click for a UPOHAR 💌
+        </button>
+    </section>
+
+    <section class="card">
+        <h2>💌 A Little Letter for You 💌</h2>
+        <p>
+            Dear Bestie,<br>
+            Thank you for being YOU. Thank you for the laughs,
+            the silly conversations, the memories and all the little
+            moments that make life brighter.
+        </p>
+        <p>
+            No matter how busy life gets, I hope you always remember
+            that you deserve love, happiness, kindness and all the
+            beautiful things in this world. 🎀
+        </p>
+        <p><strong>You're my bestest SUYARER BACCHA ever. ALWAYS. ♡</strong></p>
+
+        <button onclick="letterSurprise()">
+            Open Your Secret Note 💝
+        </button>
+
+        <div class="message" id="letter">
+            Psst... there's a little GUPTOdhon waiting for you! 🐻💕
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>🎀 Reasons Why You're Amazing 🎀</h2>
+
+        <div class="reasons">
+            <div class="reason">🌸 You're Suyar</div>
+            <div class="reason">🧸 You're kind</div>
+            <div class="reason">💕 You make me feel puke</div>
+            <div class="reason">✨ You're irreplaceable</div>
+            <div class="reason">🎀 You're YOU</div>
+            <div class="reason">💖 You're my cashier xD</div>
+        </div>
+
+        <button onclick="compliment()">
+            Give Me a Compliment 💗
+        </button>
+
+        <div class="message" id="compliment">
+            Click the button, SUYAR! 🎀
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>🐱 Bestie Promise 🐱</h2>
+        <p>
+            I promise to cheer for you, celebrate your wins,
+            listen when you need someone and remind you of your
+            worth when you're having a dhoner moto day. 🌷
+        </p>
+        <p>
+            We might have bad days, busy days and days when
+            everything feels messy...
+        </p>
+        <p>
+            But I hope we always find reasons to laugh and drink alcohol together lmao. 💞
+        </p>
+
+        <button onclick="bestiePromise()">
+            Seal Our Friendship 💋
+        </button>
+
+        <div class="message" id="promise">
+            Friendship contract: waiting for your signature! 🐾
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>🎁 Your Little Happiness Corner 🎁</h2>
+        <p>Feeling sad? Need a hug? Just press a button! 🥺</p>
+
+        <button onclick="hug()">Send a Hug 🧸</button>
+        <button onclick="sprinkle()">Sprinkle Magic ✨</button>
+        <button onclick="makeWish()">Make a Wish 🌟</button>
+
+        <div class="message" id="magic">
+            Your happiness matters, bestie. 💕
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="bow">🎀 💗 🌸 💗 🎀</div>
+</footer>
+
+<script>
+function showMessage() {
+    alert(
+        "HIIII Suyar!! 🎀💕\n\n" +
+        "YOU ARE MY BESTEST FRIEND EVER!! 🐱💗\n\n" +
+        "Sending you a million LATTHI and GHUSHI! 😘🍓"
+    );
+}
+
+function letterSurprise() {
+    document.getElementById("letter").innerHTML =
+        "💌 SECRET MESSAGE 💌<br><br>" +
+        "HATTTI MATIM TIM " +
+        "TARA MATHE PARE DIM " ;
+        
+}
+
+const compliments = [
+    "You make the world a little more beautiful! 🌸",
+    "You are somebody's favorite reason to PUKE(THATS ME LOL)! 💗",
+    "You deserve every little good thing coming your way! 🎀",
+    "You are precious, and don't you forget it! 🧸",
+    "The world is heavier with you in it! 🌷",
+    "You are literally a walking SUYAR! 🐱💕"
+];
+
+function compliment() {
+    const random = Math.floor(Math.random() * compliments.length);
+    document.getElementById("compliment").innerHTML =
+        "💖 " + compliments[random] + " 💖";
+}
+
+function bestiePromise() {
+    document.getElementById("promise").innerHTML =
+        "🤝 OFFICIALLY SEALED! 🎀<br><br>" +
+        "Bestie status: FOREVER 💗<br>" +
+        "Hugs remaining: INFINITE 🧸<br>" +
+        "Love level: UNLIMITED 💕";
+    hearts();
+}
+
+function hug() {
+    document.getElementById("magic").innerHTML =
+        "🫂 BIGGEST VIRTUAL LATTHI EVER!! 🫂<br><br>" +
+        "Imagine a warm, cozy hug from a suyar that lasts " +
+        "as long as you need. 💗";
+    hearts();
+}
+
+function sprinkle() {
+    document.getElementById("magic").innerHTML =
+        "✨✨ MAGIC ACTIVATED! ✨✨<br><br>" +
+        "May your day be filled with pink skies, " +
+        "sweet surprises, yummy strawberries " +
+        "and lots of happiness! 🍓🌸";
+    hearts();
+}
+
+function makeWish() {
+    document.getElementById("magic").innerHTML =
+        "🌟 CLOSE YOUR EYES AND MAKE A WISH! 🌟<br><br>" +
+        "I hope something beautiful finds its way to you. 💕";
+    hearts();
+}
+
+function hearts() {
+    const emojis = ["💗", "💕", "🎀", "🌸", "✨", "💖", "🍓"];
+
+    for (let i = 0; i < 18; i++) {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.textContent = emojis[
+            Math.floor(Math.random() * emojis.length)
+        ];
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = (18 + Math.random() * 20) + "px";
+        heart.style.animationDuration = (3 + Math.random() * 3) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 6500);
+    }
+}
+</script>
+
+</body>
+</html>
